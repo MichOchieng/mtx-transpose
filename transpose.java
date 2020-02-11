@@ -11,7 +11,7 @@ public class transpose{
         this.rows = rows;
         this.cols = cols;
         this.terms = 0;
-        a = new int[rows*cols][3];
+        a = new int[100][3];
     }
     
     // Result matrix    
@@ -35,7 +35,7 @@ public class transpose{
 
     public static void callTranspose(){      
       transposeMtx();        
-      viewResultMtx();
+    //   viewResultMtx();
     }
 
     private static void transposeMtx(){   
@@ -64,16 +64,7 @@ public class transpose{
             // Transposing row => col then col => row
             result[a[i][1]][a[i][0]] = a[i][2];            
         }
-    }
-
-
-    // private static void slowTranspose(){
-    //     for (int i = 0; i < result.length; i++) {
-    //         for (int j = 0; j < result.length; j++) {
-                
-    //         }            
-    //     }
-    // }
+    }  
 
     // Prints out result matrix    
     private static void viewResultMtx(){
